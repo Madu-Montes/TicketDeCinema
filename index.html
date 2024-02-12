@@ -4,49 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/card-effect.css"> <!-- Adicione um arquivo CSS separado para o efeito de virada de carta -->
     <title>Ticket</title>
 </head>
 <body>
-    <section class="box-ticket">
-        <div class="ticket">
+    <div class="container" id="ticket">
+        <div class="card-front">
             <div class="image">
-                <img src="./bgSpiderMan.jpg" alt="banner Spider Man">
+                <img src="bgSpiderMan.jpg" alt="banner Spider Man">
             </div>
-            <span>LEGENDADO</span>
+            <div class="box-infos">
+                <h1>Homem Aranha:<br> Através do Aranhaverso</h1>
+                <table>
+                    <tr class="infos-header">
+                        <td>Sala</td>
+                        <td>Fileira</td>
+                        <td>Poltrona</td>
+                    </tr>
+                    <tr class="infos-body">
+                        <td>01</td>
+                        <td>F</td>
+                        <td>8</td>
+                    </tr>
+                    <tr class="infos-header">
+                        <td>Data</td>
+                        <td>Sessão</td>
+                        <td>Valor</td>
+                    </tr>
+                    <tr class="infos-body">
+                        <td>1 Jul 23</td>
+                        <td>16:15</td>
+                        <td>R$ 19,99</td>
+                    </tr>
+                </table>
+                <hr size="1" style="border:1px dashed #00000065;">
+                
+                <div class="bar-code">
+                    <img src="code.svg" alt="código de barras">
+                </div>
+            </div>
         </div>
-        <div class="info">
-            <h1>Homem-Aranha: Através do Aranhaverso</h1>
-            <ul>
-                <li>
-                    <span>Sala</span>
-                    <strong>01</strong>
-                </li>
-                <li>
-                    <span>Fileira</span>
-                    <strong>F</strong>
-                </li>
-                <li>
-                    <span>Poltrona</span>
-                    <strong>8</strong>
-                </li>
-                <li>
-                    <span>Data</span>
-                    <strong>16 Dez 23</strong>
-                </li>
-                <li>
-                    <span>Sessão</span>
-                    <strong>16:15</strong>
-                </li>
-                <li>
-                    <span>Valor</span>
-                    <strong>R$ 11,98</strong>
-                </li>
-            </ul>
-        </div>
-        <div class="bar-code">
-            <img src="code.svg" alt="código de barras">
-        </div>
-    </section>
-    
+        
+    </div>
 </body>
 </html>
