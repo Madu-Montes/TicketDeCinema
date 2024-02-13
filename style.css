@@ -15,15 +15,17 @@ body{
 
 .container{
     background-color: #fff;
-    width: 45rem;
+    width: 300px;
     height: auto;
     border-radius: 20px;
-    perspective: 700px;
-    margin-top: -1150px;
+    perspective: 800px;
+    margin-top: -40%;
 }
 
 .image img{
-    width: 45rem;
+    width: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .box-infos{
@@ -33,7 +35,7 @@ body{
 h1{
     color: #333333;
     font-weight: 900;
-    font-size: 50px;
+    font-size: 18px;
 }
 
 table {
@@ -47,31 +49,28 @@ table th, table td {
 
 
 table .infos-header{
-    font-size: 18px;
     color: #666666;
+    font-size: small;
 }
 
 table .infos-body{
-    font-size: 26px;
     color: #333333;
+    font-size: small;
 }
 
-
 hr{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .bar-code{
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
 }
 
-p{
-    font-size: 26px;
+.bar-code img{
+    max-width: 80%
 }
-
 
 .ticket-front, .ticket-back{
     width: 100%;
@@ -82,7 +81,7 @@ p{
 
 .ticket-front{
     background-color: #fff;
-    width: 45rem;
+    width: 300px;
     height: auto;
     border-radius: 20px;
     z-index: 1;
@@ -90,20 +89,20 @@ p{
 
 .ticket-back{
     background-color: #fff;
-    width: 45rem;
+    width: 300px;
     height: auto;
     border-radius: 20px;
     transform: rotateY(-180deg);
     backface-visibility: hidden;
 }
 
-.ticket-back h1{
-    margin-bottom: 15px;
+.ticket-back h1,p{
+    padding: 5px;
+    line-height: 1.4;
 }
 
-.ticket-back h1,p{
-    padding: 25px;
-    line-height: 1.1;
+.ticket-back p{
+    font-size: small;
 }
 
 .container:hover .ticket-front{
